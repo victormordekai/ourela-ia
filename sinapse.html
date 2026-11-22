@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <!-- Base -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="pt-BR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Privacidade verificável: esta página não envia dados a nenhum servidor.
+       connect-src 'none' e form-action 'none' proíbem qualquer requisição de dados;
+       só as fontes tipográficas são carregadas de fora. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer">
+
+  <!-- SEO -->
+  <title>Painel SINAPSE · OURELA-IA conecta seu negócio ao seu modelo de IA preferido</title>
+  <meta name="description" content="Claude, ChatGPT, Gemini ou DeepSeek: use o modelo de IA que a sua empresa preferir, na sua própria conta. A OURELA-IA direciona com método de gestão da produção; não gerencia nem restringe sua conta e não grava logins nem dados.">
+  <meta name="keywords" content="OURELA-IA, SINAPSE, modelos de IA, Claude, ChatGPT, Gemini, DeepSeek, governança de IA, gestão da produção, confecção, PCP, prompts de gestão, RETEAR">
+  <meta name="author" content="Victor Mordekai Ferreira">
+  <meta name="copyright" content="© OURELA-IA · Frente estrutural RETEAR®">
+  <link rel="canonical" href="https://victormordekai.github.io/ourela-ia/sinapse.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Mobile e tema -->
+  <meta name="theme-color" content="#090909">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OURELA-IA · RETEAR®">
+  <meta property="og:title" content="Painel SINAPSE · OURELA-IA conecta seu negócio ao seu modelo de IA preferido">
+  <meta property="og:description" content="Você escolhe o modelo e usa sua própria conta. A OURELA-IA direciona com método.">
+  <meta property="og:url" content="https://victormordekai.github.io/ourela-ia/sinapse.html">
+  <meta property="og:image" content="https://victormordekai.github.io/ourela-ia/assets/og/ourela-ia-og-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/ourela.css">
+  <link rel="stylesheet" href="css/ourela-buttons.css">
+  <link rel="stylesheet" href="css/ourela-nav.css">
+  <link rel="stylesheet" href="css/ourela-sinapse.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/ourela-symbol.svg">
+</head>
+<body id="top" class="page-sinapse">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="OURELA-IA início">
+      <img src="assets/logo-retear.png" alt="Símbolo RETEAR" class="brand-symbol">
+      <span class="brand-divider"></span><span class="brand-name">OURELA<span>-IA</span><small>by RETEAR®</small></span>
+      <span class="brand-hud" aria-hidden="true"><svg viewBox="0 0 68 48" aria-hidden="true" focusable="false"><defs><linearGradient id="ourelaBronze" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7c9a3"/><stop offset=".45" stop-color="#bd7444"/><stop offset="1" stop-color="#7a3f1f"/></linearGradient></defs><g fill="url(#ourelaBronze)" stroke="#090909" stroke-width="1.6"><rect x="4" y="14" width="32" height="6" rx="1"/><rect x="4" y="28" width="32" height="6" rx="1"/><rect x="11" y="4" width="6" height="40" rx="1"/><rect x="23" y="4" width="6" height="40" rx="1"/><rect x="9" y="14" width="10" height="6"/><rect x="21" y="28" width="10" height="6"/></g><text x="38" y="32" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="url(#ourelaBronze)">-IA</text></svg></span><span class="hud-label">OURELA-IA · início</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">☰<span class="hud-label">Menu</span></button>
+    <nav id="main-nav"><a href="index.html#conceito">Conceito</a><a href="index.html#independencia">Independência</a><a href="#painel" aria-current="page">Painel SINAPSE</a><a href="#modelos">Modelos</a><a href="index.html#contato" class="nav-cta">Diagnóstico</a></nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="sx-hero">
+      <div class="hero-image" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap sx-hero-content">
+        <div class="eyebrow reveal"><i></i> Painel SINAPSE · demonstração prática</div>
+        <h1 class="reveal">OURELA-IA conecta seu negócio ao <em>melhor desempenho</em> do seu modelo de IA preferido.</h1>
+        <p class="hero-lead reveal">Claude, ChatGPT, Gemini, DeepSeek: a escolha é sua, na sua conta e no seu plano. A OURELA-IA entra com o método. Ela direciona cada pergunta com gestão da produção, mandato e alçadas, mas não gerencia nem restringe a conta que você usa.</p>
+        <div class="hero-actions reveal"><a class="button btn-ourela-cobre" href="#painel">Abrir o painel <span>↘</span></a><a class="button btn-ourela-platina" href="#alcada">O que a OURELA-IA não faz <span>↘</span></a></div>
+        <div class="hero-stamp reveal"><b>VOCÊ ESCOLHE O MODELO</b><span>·</span><b>A OURELA-IA ESTRUTURA O MÉTODO</b></div>
+      </div>
+    </section>
+
+    <!-- ============ PAINEL ============ -->
+    <section class="section sx-painel" id="painel" aria-labelledby="painel-titulo">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <div class="section-label">01 / Painel</div>
+          <h2 id="painel-titulo">Um painel.<br><em>Quatro portas oficiais.</em></h2>
+          <p>Escolha o modelo, escolha um prompt de método no HUD e trabalhe na sua conta. Cada modelo abre no próprio site oficial, numa janela ao lado. O login, a conversa e os dados ficam entre você e o provedor.</p>
+        </div>
+
+        <ol class="sx-passos reveal" aria-label="Como usar">
+          <li><b>1</b><span>Escolha o modelo na aba</span></li>
+          <li><b>2</b><span>Escolha um prompt no HUD <i class="sx-hud-ico" aria-hidden="true">✦</i></span></li>
+          <li><b>3</b><span>Envie na sua própria conta</span></li>
+        </ol>
+
+        <div class="sx-browser reveal">
+          <div class="sx-tabs" role="tablist" aria-label="Modelos de IA">
+            <button class="sx-tab" role="tab" id="tab-claude" aria-controls="porta-claude" aria-selected="true" data-modelo="claude"><i class="sx-dot"></i>Claude</button>
+            <button class="sx-tab" role="tab" id="tab-chatgpt" aria-controls="porta-chatgpt" aria-selected="false" tabindex="-1" data-modelo="chatgpt"><i class="sx-dot"></i>ChatGPT</button>
+            <button class="sx-tab" role="tab" id="tab-gemini" aria-controls="porta-gemini" aria-selected="false" tabindex="-1" data-modelo="gemini"><i class="sx-dot"></i>Gemini</button>
+            <button class="sx-tab" role="tab" id="tab-deepseek" aria-controls="porta-deepseek" aria-selected="false" tabindex="-1" data-modelo="deepseek"><i class="sx-dot"></i>DeepSeek</button>
+          </div>
+
+          <!-- Claude -->
+          <div class="sx-porta" role="tabpanel" id="porta-claude" aria-labelledby="tab-claude" data-modelo="claude">
+            <div class="sx-endereco"><span class="sx-cadeado" aria-hidden="true"></span><span class="sx-url">https://claude.ai</span><small>domínio oficial · Anthropic</small></div>
+            <div class="sx-porta-corpo">
+              <div>
+                <h3>Claude</h3>
+                <p>Abre o Claude no site oficial, numa janela ao lado deste painel. Se você já estiver logado, a conversa começa direto. Se não, o login acontece na página da Anthropic, não aqui.</p>
+                <p class="sx-nota">Prompt do HUD: o painel copia o texto e tenta pré-preencher o campo pelo link. Se o campo vier vazio, cole com <kbd>Ctrl</kbd>+<kbd>V</kbd> (<kbd>⌘</kbd>+<kbd>V</kbd> no Mac).</p>
+              </div>
+              <div class="sx-porta-acoes">
+                <a class="button btn-ourela-platina" href="https://claude.ai/new" target="ourela_claude" rel="noopener" data-abrir="claude">Abrir Claude ao lado <span>↗</span></a>
+                <small>Sua conta · seu plano · termos da Anthropic</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- ChatGPT -->
+          <div class="sx-porta" role="tabpanel" id="porta-chatgpt" aria-labelledby="tab-chatgpt" data-modelo="chatgpt">
+            <div class="sx-endereco"><span class="sx-cadeado" aria-hidden="true"></span><span class="sx-url">https://chatgpt.com</span><small>domínio oficial · OpenAI</small></div>
+            <div class="sx-porta-corpo">
+              <div>
+                <h3>ChatGPT</h3>
+                <p>Abre o ChatGPT no site oficial, numa janela ao lado deste painel. O login, quando necessário, acontece na página da OpenAI.</p>
+                <p class="sx-nota">Prompt do HUD: o painel copia o texto e o ChatGPT costuma recebê-lo já no campo pelo link. Confira e envie. Se não aparecer, cole com <kbd>Ctrl</kbd>+<kbd>V</kbd>.</p>
+              </div>
+              <div class="sx-porta-acoes">
+                <a class="button btn-ourela-platina" href="https://chatgpt.com/" target="ourela_chatgpt" rel="noopener" data-abrir="chatgpt">Abrir ChatGPT ao lado <span>↗</span></a>
+                <small>Sua conta · seu plano · termos da OpenAI</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gemini -->
+          <div class="sx-porta" role="tabpanel" id="porta-gemini" aria-labelledby="tab-gemini" data-modelo="gemini">
+            <div class="sx-endereco"><span class="sx-cadeado" aria-hidden="true"></span><span class="sx-url">https://gemini.google.com</span><small>domínio oficial · Google</small></div>
+            <div class="sx-porta-corpo">
+              <div>
+                <h3>Gemini</h3>
+                <p>Abre o Gemini no site oficial, numa janela ao lado deste painel, com a sua conta Google. O login acontece no Google, não aqui.</p>
+                <p class="sx-nota">Prompt do HUD: o painel copia o texto. O Gemini não recebe prompt pelo link, então cole com <kbd>Ctrl</kbd>+<kbd>V</kbd> no campo de mensagem.</p>
+              </div>
+              <div class="sx-porta-acoes">
+                <a class="button btn-ourela-platina" href="https://gemini.google.com/app" target="ourela_gemini" rel="noopener" data-abrir="gemini">Abrir Gemini ao lado <span>↗</span></a>
+                <small>Sua conta · seu plano · termos do Google</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- DeepSeek -->
+          <div class="sx-porta" role="tabpanel" id="porta-deepseek" aria-labelledby="tab-deepseek" data-modelo="deepseek">
+            <div class="sx-endereco"><span class="sx-cadeado" aria-hidden="true"></span><span class="sx-url">https://chat.deepseek.com</span><small>domínio oficial · DeepSeek</small></div>
+            <div class="sx-porta-corpo">
+              <div>
+                <h3>DeepSeek</h3>
+                <p>Abre o DeepSeek no site oficial, numa janela ao lado deste painel. O login acontece na página da DeepSeek.</p>
+                <p class="sx-nota">Prompt do HUD: o painel copia o texto. O DeepSeek não recebe prompt pelo link, então cole com <kbd>Ctrl</kbd>+<kbd>V</kbd> no campo de mensagem.</p>
+              </div>
+              <div class="sx-porta-acoes">
+                <a class="button btn-ourela-platina" href="https://chat.deepseek.com/" target="ourela_deepseek" rel="noopener" data-abrir="deepseek">Abrir DeepSeek ao lado <span>↗</span></a>
+                <small>Sua conta · seu plano · termos da DeepSeek</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="sx-faixa" role="note">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <p><b>Alçada OURELA-IA:</b> esta página não vê, não grava e não gerencia seu login, suas conversas nem seus dados. Ela não tem formulário nem cookies e é tecnicamente proibida de enviar dados a qualquer servidor. O uso de cada modelo segue os termos do respectivo provedor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HUD DE PROMPTS ============
+         Sem JavaScript, aparece como uma seção comum com os prompts legíveis.
+         Com JavaScript, vira o HUD flutuante. -->
+    <aside class="sx-hud" id="prompts" aria-labelledby="hud-titulo">
+      <div class="sx-hud-cabeca">
+        <div>
+          <div class="section-label">HUD · Prompts de método</div>
+          <h2 id="hud-titulo">Escolha um prompt</h2>
+          <p class="sx-hud-destino">Destino: <b data-destino>Claude</b></p>
+        </div>
+        <button class="sx-hud-fechar" type="button" aria-label="Fechar prompts">×</button>
+      </div>
+
+      <div class="sx-trilhas" role="tablist" aria-label="Trilhas de prompts">
+        <button class="sx-trilha" role="tab" id="trilha-producao" aria-controls="lista-producao" aria-selected="true">Governança da produção</button>
+        <button class="sx-trilha" role="tab" id="trilha-elementos" aria-controls="lista-elementos" aria-selected="false" tabindex="-1">Modelos, skills, agentes</button>
+        <button class="sx-trilha" role="tab" id="trilha-contas" aria-controls="lista-contas" aria-selected="false" tabindex="-1">Contas pro</button>
+      </div>
+
+      <div class="sx-listas">
+        <!-- Trilha 1 -->
+        <section class="sx-lista" role="tabpanel" id="lista-producao" aria-labelledby="trilha-producao">
+          <h3 class="sx-lista-titulo">Governança de processos · administração da produção em confecção</h3>
+          <article class="sx-prompt">
+            <details><summary>Mapear o gargalo da confecção</summary>
+              <pre class="sx-texto">Atue como analista de PCP de uma confecção. Vou descrever os setores (corte, costura, acabamento), o número de operadores, o tempo padrão por peça e a demanda do período. Com esses dados: 1) calcule a capacidade e a ocupação de cada setor; 2) calcule o takt time; 3) aponte o gargalo pela Teoria das Restrições; 4) proponha três ações para o gargalo, separando o que é dado medido do que é estimativa. Se faltar algum dado, pergunte antes de calcular. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Estruturar o romaneio para a facção</summary>
+              <pre class="sx-texto">Atue como gestor de produção de uma confecção que trabalha com facções (terceiros produtivos). Proponha a estrutura mínima de um romaneio de envio para a facção: referência, grade e quantidades, aviamentos, ficha técnica, tempo padrão por peça, prazo combinado, critérios de qualidade na devolução e campos de responsável e aceite dos dois lados. Inclua um checklist de conferência na saída e no retorno do lote. Não trate da rotina interna da facção, só da relação entre as duas empresas. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Acordo de nível de serviço com terceiros</summary>
+              <pre class="sx-texto">Ajude-me a estruturar um acordo de nível de serviço (SLA) entre minha confecção e uma facção parceira. Organize em: prazos e como comunicar atrasos; tolerância de defeitos e como tratar retrabalho; forma de registrar envios, devoluções e aceites; revisão periódica do acordo. O acordo deve proteger os dois lados e não supervisionar a operação interna da facção. Termine com as perguntas que eu preciso responder antes de assinar. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Objetivos de desempenho da operação</summary>
+              <pre class="sx-texto">Leia a minha operação de confecção pelos cinco objetivos de desempenho da administração da produção: qualidade, confiabilidade, velocidade, flexibilidade e custos. Para cada objetivo, proponha um indicador simples de medir no chão de fábrica e como definir uma meta inicial. Depois, me ajude a escolher qual objetivo deve ser a prioridade da operação neste momento. Comece me fazendo até cinco perguntas sobre a operação. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+        </section>
+
+        <!-- Trilha 2 -->
+        <section class="sx-lista" role="tabpanel" id="lista-elementos" aria-labelledby="trilha-elementos">
+          <h3 class="sx-lista-titulo">O que são modelos, skills, agentes e tools</h3>
+          <article class="sx-prompt">
+            <details><summary>Os nove elementos de um sistema de IA</summary>
+              <pre class="sx-texto">Explique, para o dono de uma confecção sem formação técnica, os nove elementos de um sistema de IA: model, skill, agent, harness, tool, workflow, MCP, memory e guardrails. Monte uma tabela com três colunas: o elemento, a pergunta que ele responde (por exemplo: model, "quem raciocina?"; tool, "com o que executar?"; guardrails, "o que é permitido?") e um exemplo do chão de fábrica. Feche com um parágrafo sobre por que a governança não pode depender de um único modelo. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Conversar com IA × delegar a um agente</summary>
+              <pre class="sx-texto">Qual é a diferença entre conversar com uma IA e delegar uma responsabilidade a um agente de IA com mandato, alçadas e registro? Dê exemplos de uma pequena empresa de confecção. Explique os riscos de delegar sem definir o que o agente pode fazer sozinho, o que depende de aprovação e o que fica sempre com uma pessoa. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>IA generativa × regra automática</summary>
+              <pre class="sx-texto">Na gestão de uma confecção, quando faz sentido usar IA generativa e quando basta uma regra automática? Exemplos para comparar: calcular a capacidade de um setor, alertar um prazo vencido, redigir uma síntese da semana, sugerir alternativas para um gargalo. Organize numa tabela com "regra automática", "IA generativa" e "decisão humana", explicando o motivo de cada classificação. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Onde a IA ajuda na minha operação</summary>
+              <pre class="sx-texto">Conduza um diagnóstico rápido da minha operação para descobrir onde a IA pode ajudar. Faça uma pergunta por vez, no máximo oito, sobre rotinas, prazos, terceiros, indicadores e decisões. No fim, classifique as atividades em três grupos: automatizar, apoiar com IA e manter com uma pessoa. Justifique cada classificação. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+        </section>
+
+        <!-- Trilha 3 -->
+        <section class="sx-lista" role="tabpanel" id="lista-contas" aria-labelledby="trilha-contas">
+          <h3 class="sx-lista-titulo">Vantagem de contas pro no modelo preferido pela empresa</h3>
+          <article class="sx-prompt">
+            <details><summary>Plano gratuito × plano pago, para empresa</summary>
+              <pre class="sx-texto">De forma neutra, explique o que muda entre o seu plano gratuito e os seus planos pagos: limites de uso, modelos disponíveis, tamanho de contexto e recursos. Em seguida, diga em quais situações de gestão da produção o plano pago se justifica por desempenho e em quais o gratuito é suficiente. Indique onde conferir os preços oficiais atualizados, porque eles mudam e variam por país. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Uma conta, um login: governança</summary>
+              <pre class="sx-texto">Por que uma empresa deveria centralizar o uso de IA numa conta vinculada ao e-mail corporativo, em vez de cada pessoa usar a própria conta pessoal? Aborde o histórico das conversas, a continuidade quando alguém sai da empresa, a organização por projetos e o controle de quem tem acesso. Termine com um passo a passo simples para organizar isso numa pequena empresa. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>A conta do custo × desempenho</summary>
+              <pre class="sx-texto">Monte comigo uma conta simples para decidir se um plano pago de IA vale a pena na minha empresa: horas por semana gastas em relatórios, controles e comunicações; quanto disso a IA pode reduzir; custo da hora de quem faz; valor mensal do plano. Pergunte os números que faltarem, mostre o cálculo e diga em quanto tempo o plano se paga. Deixe claro o que é estimativa. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+          <article class="sx-prompt">
+            <details><summary>Como escolher o modelo preferido da empresa</summary>
+              <pre class="sx-texto">Proponha um teste de uma semana para eu escolher o modelo de IA da minha empresa. Use as mesmas cinco tarefas reais de gestão da produção em dois ou mais modelos e avalie cada resposta por critérios objetivos: precisão, clareza, se pediu os dados que faltavam, tempo para chegar a um resultado útil e custo do plano. Entregue uma planilha-modelo de avaliação em texto. Responda em português do Brasil.</pre>
+            </details>
+            <div class="sx-prompt-acoes"><button type="button" class="sx-copiar">Copiar</button><button type="button" class="sx-copiar-abrir">Copiar e abrir</button></div>
+          </article>
+        </section>
+      </div>
+
+      <p class="sx-hud-rodape">Prompts públicos e legíveis antes do clique. Copiar não envia nada: o texto vai só para a sua área de transferência.</p>
+    </aside>
+
+    <button class="sx-hud-toggle" type="button" aria-controls="prompts" aria-expanded="false">
+      <span class="sx-hud-toggle-ico" aria-hidden="true">✦</span><span class="hud-label">Prompts de método</span>
+    </button>
+    <div class="sx-toast" role="status" aria-live="polite"></div>
+
+    <!-- ============ ALÇADA ============ -->
+    <section class="section human sx-alcada" id="alcada">
+      <div class="wrap human-grid">
+        <div class="section-label reveal">02 / Termos de alçada</div>
+        <div class="human-copy reveal">
+          <h2>A OURELA-IA direciona.<br><em>A conta é sua.</em></h2>
+          <p>Planos, limites de uso e tratamento de dados são definidos por cada provedor, nos termos que você aceita diretamente com ele. A OURELA-IA não escolhe, não paga, não administra e não restringe o modelo que a sua empresa usa.</p>
+          <div class="human-columns">
+            <div><small>A OURELA-IA FAZ</small><ul>
+              <li>Estrutura o método: mandato, alçadas e registro.</li>
+              <li>Direciona as perguntas com gestão da produção.</li>
+              <li>Recomenda, com justificativa de desempenho.</li>
+              <li>Mantém a governança funcionando sem IA generativa.</li>
+            </ul></div>
+            <div><small>A OURELA-IA NÃO FAZ</small><ul>
+              <li>Não pede, não vê e não grava logins ou senhas.</li>
+              <li>Não lê, não guarda e não gerencia suas conversas.</li>
+              <li>Não escolhe nem restringe o seu plano.</li>
+              <li>Não responde pelo uso dos modelos de terceiros.</li>
+            </ul></div>
+          </div>
+          <div class="sx-recomenda">
+            <div><small>RECOMENDAÇÃO DE GOVERNANÇA</small><p>Use o modelo com o mesmo e-mail de cadastro da empresa: histórico e continuidade numa só identidade.</p></div>
+            <div><small>RECOMENDAÇÃO DE DESEMPENHO</small><p>Para uso diário em gestão, planos pagos reduzem interrupções por limite de uso. É recomendação, não condição.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODELOS ============ -->
+    <section class="section sx-modelos" id="modelos">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <div class="section-label">03 / Conheça os modelos</div>
+          <h2>Conheça esses modelos de IA<br><em>e seus preços em seus websites.</em></h2>
+          <p>Não existe um modelo melhor para tudo. Cada um tem forças, planos e limites diferentes, e alguns vão cumprir os objetivos de desempenho da sua operação melhor que outros. Os resumos abaixo seguem as páginas oficiais. Os preços mudam e variam por país, por isso ficam sempre no site de cada provedor.</p>
+        </div>
+
+        <div class="sx-cards">
+          <article class="sx-card reveal">
+            <div class="sx-card-topo"><span>Anthropic</span><span>01</span></div>
+            <h3>Claude</h3>
+            <p class="sx-uso"><small>Uso principal, segundo o site oficial</small>Escrita, edição e análise de conteúdo, geração de código e visualização de dados. Projetos para organizar conversas e documentos, pesquisa aprofundada e conectores com ferramentas de trabalho.</p>
+            <dl class="sx-planos"><div><dt>Gratuito</dt><dd>Sim, com limites de uso</dd></div><div><dt>Pagos</dt><dd>Pro, Max · Team e Enterprise para empresas</dd></div><div><dt>Para desenvolvedores</dt><dd>API cobrada por uso</dd></div></dl>
+            <div class="sx-card-links"><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Site oficial ↗</a><a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">Planos e preços ↗</a></div>
+            <p class="sx-fonte">Fonte: claude.com/pricing · consultado em 21/11/2026</p>
+          </article>
+
+          <article class="sx-card reveal">
+            <div class="sx-card-topo"><span>OpenAI</span><span>02</span></div>
+            <h3>ChatGPT</h3>
+            <p class="sx-uso"><small>Uso principal, segundo o site oficial</small>Conversas para tarefas do dia a dia, pesquisa aprofundada, criação de imagens, voz, projetos e o agente de programação Codex.</p>
+            <dl class="sx-planos"><div><dt>Gratuito</dt><dd>Sim, com limites de uso</dd></div><div><dt>Pagos</dt><dd>Go, Plus, Pro · planos para empresas</dd></div><div><dt>Para desenvolvedores</dt><dd>API cobrada por uso</dd></div></dl>
+            <div class="sx-card-links"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">Site oficial ↗</a><a href="https://chatgpt.com/pricing" target="_blank" rel="noopener noreferrer">Planos e preços ↗</a></div>
+            <p class="sx-fonte">Fonte: chatgpt.com/pricing · consultado em 21/11/2026</p>
+          </article>
+
+          <article class="sx-card reveal">
+            <div class="sx-card-topo"><span>Google</span><span>03</span></div>
+            <h3>Gemini</h3>
+            <p class="sx-uso"><small>Uso principal, segundo o site oficial</small>Assistente integrado aos produtos Google, como Gmail e Docs, com pesquisa aprofundada. Os planos pagos combinam acesso ampliado ao Gemini com armazenamento em nuvem.</p>
+            <dl class="sx-planos"><div><dt>Gratuito</dt><dd>Sim, com limites de uso</dd></div><div><dt>Pagos</dt><dd>Google AI Plus, Pro e Ultra</dd></div><div><dt>Para desenvolvedores</dt><dd>API com nível gratuito e uso pago</dd></div></dl>
+            <div class="sx-card-links"><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Site oficial ↗</a><a href="https://one.google.com/about/google-ai-plans/" target="_blank" rel="noopener noreferrer">Planos e preços ↗</a></div>
+            <p class="sx-fonte">Fonte: one.google.com/about/google-ai-plans · consultado em 21/11/2026</p>
+          </article>
+
+          <article class="sx-card reveal">
+            <div class="sx-card-topo"><span>DeepSeek</span><span>04</span></div>
+            <h3>DeepSeek</h3>
+            <p class="sx-uso"><small>Uso principal, segundo o site oficial</small>Chat gratuito na web e no aplicativo, para perguntas do dia a dia, escrita e raciocínio. A API para empresas e desenvolvedores é cobrada por token.</p>
+            <dl class="sx-planos"><div><dt>Gratuito</dt><dd>Sim, chat na web e no app</dd></div><div><dt>Pagos</dt><dd>Sem assinatura mensal no chat</dd></div><div><dt>Para desenvolvedores</dt><dd>API cobrada por token</dd></div></dl>
+            <div class="sx-card-links"><a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer">Site oficial ↗</a><a href="https://api-docs.deepseek.com/quick_start/pricing" target="_blank" rel="noopener noreferrer">Preços da API ↗</a></div>
+            <p class="sx-fonte">Fonte: chat.deepseek.com e api-docs.deepseek.com · consultado em 21/11/2026</p>
+          </article>
+        </div>
+
+        <p class="sx-marcas reveal">Claude é marca da Anthropic; ChatGPT, da OpenAI; Gemini, do Google; DeepSeek, da DeepSeek. A OURELA-IA não é afiliada a essas empresas e não fala em nome delas. Os resumos são informativos: planos, preços e recursos são definidos e atualizados por cada provedor.</p>
+      </div>
+    </section>
+
+    <!-- ============ FECHO ============ -->
+    <section class="contact section" id="contato"><div class="wrap contact-panel reveal"><div class="section-label">04 / Próximo passo</div><h2>O modelo é seu.<br><em>A continuidade também.</em></h2><p>O diagnóstico OURELA-IA mostra onde a sua operação depende da memória de uma pessoa e como estruturar mandato, alçadas e registro para qualquer modelo que você escolher.</p><a class="button btn-ourela-cobre" href="https://wa.me/5541997584893?text=Ol%C3%A1%21%20Vi%20o%20Painel%20SINAPSE%20e%20gostaria%20de%20conhecer%20a%20OURELA-IA." target="_blank" rel="noopener noreferrer">Iniciar diagnóstico <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="index.html"><img src="assets/logo-retear.png" alt="Símbolo RETEAR" class="brand-symbol"><span class="brand-divider"></span><span class="brand-name">OURELA<span>-IA</span><small>by RETEAR®</small></span></a><div class="footer-links"><a href="index.html#conceito">Conceito</a><a href="index.html#independencia">Independência de modelos</a><a href="#painel">Painel SINAPSE</a><a href="#modelos">Modelos</a><a href="https://www.linkedin.com/in/victormordekai/" target="_blank" rel="noopener noreferrer">RETEAR® / LinkedIn ↗</a></div></div><div class="wrap footer-bottom"><span>© <b data-year>2026</b> OURELA-IA · RETEAR® — Todos os direitos reservados.</span><span>Painel SINAPSE V001.0.0 · 21.11.2026</span><a href="#top">Voltar ao topo ↑</a></div></footer>
+
+  <script src="js/ourela.js"></script>
+  <script src="js/ourela-nav.js" defer></script>
+  <script src="js/ourela-sinapse.js" defer></script>
+</body>
+</html>
