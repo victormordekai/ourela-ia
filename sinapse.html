@@ -76,7 +76,7 @@
       <div class="wrap sx-hero-content">
         <div class="eyebrow reveal"><i></i> Painel SINAPSE · demonstração prática</div>
         <h1 class="reveal">OURELA-IA conecta seu negócio ao <em>melhor desempenho</em> do seu modelo de IA preferido.</h1>
-        <p class="hero-lead reveal">Claude, ChatGPT, Gemini, DeepSeek: a escolha é sua, na sua conta e no seu plano. A OURELA-IA entra com o método. Ela direciona cada pergunta com gestão da produção, mandato e alçadas, mas não gerencia nem restringe a conta que você usa.</p>
+        <p class="hero-lead reveal">Claude, ChatGPT, Gemini, DeepSeek ou outro: a escolha é sua, na sua conta e no seu plano. A OURELA-IA entra com o método. Ela direciona cada pergunta com gestão da produção, mandato e alçadas, mas não gerencia nem restringe a conta que você usa.</p>
         <div class="hero-actions reveal"><a class="button btn-ourela-cobre" href="#painel">Abrir o painel <span>↘</span></a><a class="button btn-ourela-platina" href="#alcada">O que a OURELA-IA não faz <span>↘</span></a></div>
         <div class="hero-stamp reveal"><b>VOCÊ ESCOLHE O MODELO</b><span>·</span><b>A OURELA-IA ESTRUTURA O MÉTODO</b></div>
       </div>
@@ -87,7 +87,7 @@
       <div class="wrap">
         <div class="section-heading reveal">
           <div class="section-label">01 / Painel</div>
-          <h2 id="painel-titulo">Um painel.<br><em>Quatro portas oficiais.</em></h2>
+          <h2 id="painel-titulo">Quatro portas oficiais.<br><em>E a do seu modelo.</em></h2>
           <p>Escolha o modelo, escolha um prompt de método no HUD e trabalhe na sua conta. Cada modelo abre no próprio site oficial, numa janela ao lado. O login, a conversa e os dados ficam entre você e o provedor.</p>
         </div>
 
@@ -103,6 +103,7 @@
             <button class="sx-tab" role="tab" id="tab-chatgpt" aria-controls="porta-chatgpt" aria-selected="false" tabindex="-1" data-modelo="chatgpt"><i class="sx-dot"></i>ChatGPT</button>
             <button class="sx-tab" role="tab" id="tab-gemini" aria-controls="porta-gemini" aria-selected="false" tabindex="-1" data-modelo="gemini"><i class="sx-dot"></i>Gemini</button>
             <button class="sx-tab" role="tab" id="tab-deepseek" aria-controls="porta-deepseek" aria-selected="false" tabindex="-1" data-modelo="deepseek"><i class="sx-dot"></i>DeepSeek</button>
+            <button class="sx-tab sx-tab-outros" role="tab" id="tab-outros" aria-controls="porta-outros" aria-selected="false" tabindex="-1" data-modelo="outros"><i class="sx-dot"></i>Outros</button>
           </div>
 
           <!-- Claude -->
@@ -165,6 +166,22 @@
               <div class="sx-porta-acoes">
                 <a class="button btn-ourela-platina" href="https://chat.deepseek.com/" target="ourela_deepseek" rel="noopener" data-abrir="deepseek">Abrir DeepSeek ao lado <span>↗</span></a>
                 <small>Sua conta · seu plano · termos da DeepSeek</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outros -->
+          <div class="sx-porta" role="tabpanel" id="porta-outros" aria-labelledby="tab-outros" data-modelo="outros">
+            <div class="sx-endereco"><span class="sx-cadeado sx-cadeado-livre" aria-hidden="true"></span><span class="sx-url">o modelo que a sua empresa já usa</span><small>escolha livre</small></div>
+            <div class="sx-porta-corpo">
+              <div>
+                <h3>Outros modelos</h3>
+                <p>Os prompts do HUD funcionam em qualquer modelo de IA: outro assistente comercial, a IA que já vem nas ferramentas de trabalho da sua empresa ou um modelo de código aberto rodando no seu próprio computador. A OURELA-IA não depende de nenhum deles.</p>
+                <p class="sx-nota">Prompt do HUD: aqui o painel apenas copia o texto. Abra o modelo da sua empresa e cole com <kbd>Ctrl</kbd>+<kbd>V</kbd> (<kbd>⌘</kbd>+<kbd>V</kbd> no Mac).</p>
+              </div>
+              <div class="sx-porta-acoes">
+                <a class="button btn-ourela-platina" href="#prompts">Escolher um prompt <span>✦</span></a>
+                <small>Sua conta · seu plano · termos do seu provedor</small>
               </div>
             </div>
           </div>
@@ -369,6 +386,21 @@
           </article>
         </div>
 
+        <article class="sx-card sx-card-outros reveal">
+          <div class="sx-card-topo"><span>Escolha livre</span><span>05</span></div>
+          <div class="sx-outros-grid">
+            <div>
+              <h3>Outros modelos</h3>
+              <p class="sx-uso">Além destes quatro, existem muitos outros assistentes de IA, e novos surgem com frequência. Alguns já vêm dentro das ferramentas de trabalho que a empresa usa. Outros são modelos de código aberto, que podem rodar no próprio computador da empresa, sem mensalidade e sem enviar dados para fora.</p>
+            </div>
+            <dl class="sx-planos">
+              <div><dt>Como escolher</dt><dd>Teste as mesmas tarefas reais em mais de um modelo. A trilha “Contas pro” do HUD tem um roteiro pronto.</dd></div>
+              <div><dt>Preços e termos</dt><dd>Sempre no site oficial de cada provedor.</dd></div>
+              <div><dt>Com a OURELA-IA</dt><dd>Mandato, alçadas e registro valem para qualquer modelo.</dd></div>
+            </dl>
+          </div>
+        </article>
+
         <p class="sx-marcas reveal">Claude é marca da Anthropic; ChatGPT, da OpenAI; Gemini, do Google; DeepSeek, da DeepSeek. A OURELA-IA não é afiliada a essas empresas e não fala em nome delas. Os resumos são informativos: planos, preços e recursos são definidos e atualizados por cada provedor.</p>
       </div>
     </section>
@@ -377,7 +409,7 @@
     <section class="contact section" id="contato"><div class="wrap contact-panel reveal"><div class="section-label">04 / Próximo passo</div><h2>O modelo é seu.<br><em>A continuidade também.</em></h2><p>O diagnóstico OURELA-IA mostra onde a sua operação depende da memória de uma pessoa e como estruturar mandato, alçadas e registro para qualquer modelo que você escolher.</p><a class="button btn-ourela-cobre" href="https://wa.me/5541997584893?text=Ol%C3%A1%21%20Vi%20o%20Painel%20SINAPSE%20e%20gostaria%20de%20conhecer%20a%20OURELA-IA." target="_blank" rel="noopener noreferrer">Iniciar diagnóstico <span>↗</span></a></div></section>
   </main>
 
-  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="index.html"><img src="assets/logo-retear.png" alt="Símbolo RETEAR" class="brand-symbol"><span class="brand-divider"></span><span class="brand-name">OURELA<span>-IA</span><small>by RETEAR®</small></span></a><div class="footer-links"><a href="index.html#conceito">Conceito</a><a href="index.html#independencia">Independência de modelos</a><a href="#painel">Painel SINAPSE</a><a href="#modelos">Modelos</a><a href="https://www.linkedin.com/in/victormordekai/" target="_blank" rel="noopener noreferrer">RETEAR® / LinkedIn ↗</a></div></div><div class="wrap footer-bottom"><span>© <b data-year>2026</b> OURELA-IA · RETEAR® — Todos os direitos reservados.</span><span>Painel SINAPSE V001.0.1 · 22.11.2026</span><a href="#top">Voltar ao topo ↑</a></div></footer>
+  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="index.html"><img src="assets/logo-retear.png" alt="Símbolo RETEAR" class="brand-symbol"><span class="brand-divider"></span><span class="brand-name">OURELA<span>-IA</span><small>by RETEAR®</small></span></a><div class="footer-links"><a href="index.html#conceito">Conceito</a><a href="index.html#independencia">Independência de modelos</a><a href="#painel">Painel SINAPSE</a><a href="#modelos">Modelos</a><a href="https://www.linkedin.com/in/victormordekai/" target="_blank" rel="noopener noreferrer">RETEAR® / LinkedIn ↗</a></div></div><div class="wrap footer-bottom"><span>© <b data-year>2026</b> OURELA-IA · RETEAR® — Todos os direitos reservados.</span><span>Painel SINAPSE V001.1.0 · 22.11.2026</span><a href="#top">Voltar ao topo ↑</a></div></footer>
 
   <script src="js/ourela.js"></script>
   <script src="js/ourela-nav.js" defer></script>

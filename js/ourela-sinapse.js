@@ -18,6 +18,8 @@
     chatgpt:  { nome: 'ChatGPT',  base: 'https://chatgpt.com/',         prefill: t => 'https://chatgpt.com/?q=' + encodeURIComponent(t) },
     gemini:   { nome: 'Gemini',   base: 'https://gemini.google.com/app', prefill: null },
     deepseek: { nome: 'DeepSeek', base: 'https://chat.deepseek.com/',   prefill: null },
+    /* Outros: escolha livre do cliente. Sem endereço: o painel só copia. */
+    outros:   { nome: 'seu modelo', base: null,                          prefill: null },
   };
   let atual = 'claude';
 
@@ -71,9 +73,9 @@
       if (ativo && focar) t.focus();
     });
     portas.forEach(p => { p.hidden = p.dataset.modelo !== id; });
-    if (destino) destino.textContent = MODELOS[id].nome;
+    if (destino) destino.textContent = id === 'outros' ? 'outro modelo, à sua escolha' : MODELOS[id].nome;
     document.querySelectorAll('.sx-copiar-abrir').forEach(b => {
-      b.textContent = 'Copiar e abrir no ' + MODELOS[id].nome;
+      b.textContent = id === 'outros' ? 'Copiar para o seu modelo' : 'Copiar e abrir no ' + MODELOS[id].nome;
     });
   }
 
@@ -131,6 +133,12 @@
     card.querySelector('.sx-copiar-abrir').addEventListener('click', async () => {
       const m = MODELOS[atual];
       const ok = await copiar(texto);
+      if (!m.base) {
+        avisar(ok
+          ? `<b>Copiado:</b> “${titulo}”. Abra o modelo que a sua empresa usa e cole com Ctrl+V (⌘+V no Mac).`
+          : 'Não foi possível copiar automaticamente. Abra “ver texto” e copie manualmente.');
+        return;
+      }
       const url = m.prefill ? m.prefill(texto) : m.base;
       abrir(atual, url);
       if (m.prefill) {
